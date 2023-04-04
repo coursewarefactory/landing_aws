@@ -1,0 +1,41 @@
+
+#footer {
+    background: #222328;
+    position: relative;
+    z-index: 10;
+}
+
+#footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer p,
+#footer a {
+    color: #fff;
+}
+
+#footer a:focus,
+#footer a:active,
+#footer a:hover {
+    opacity: .75;
+    text-decoration: none;
+}
+
+#footer p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 24px;
+}
+
+#footer .social li {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+@media only screen and (max-width:992px) {
+    ul.social {
+        padding-left: 0;
+        margin-top: 24px;
+    }
+}

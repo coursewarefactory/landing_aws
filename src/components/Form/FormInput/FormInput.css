@@ -1,0 +1,7 @@
+.form-label {
+    display: block;
+    max-width: 100%;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-bottom: 0
+}

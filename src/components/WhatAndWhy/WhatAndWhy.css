@@ -1,0 +1,41 @@
+
+#what-why {
+    position: relative;
+    z-index: 1;
+    padding: 10% 0;
+}
+
+#what-why .col-lg-6 {
+    z-index: 10;
+}
+
+#what-why:before {
+    content: '';
+    background: url(assets/image-lines-5.png) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 600px;
+    margin-top: -300px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+}
+
+#what-why img {
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width:992px) {
+    #what-why {
+        padding-bottom: 0;
+    }
+
+    #what-why:before {
+        display: none;
+    }
+
+    #what-why h3 {
+        margin-top: 50px;
+    }
+}

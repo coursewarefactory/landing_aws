@@ -1,0 +1,42 @@
+
+#partner {
+    position: relative;
+    z-index: 1;
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+#partner .col-12 {
+    z-index: 10;
+}
+
+#partner:before {
+    content: '';
+    background: url(assets/image-lines-6.png) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 600px;
+    margin-top: -300px;
+    top: 50%;
+    right: 0;
+    position: absolute;
+}
+
+
+@media screen and (max-width:992px) {
+
+    #partner:before,
+    #partner:after {
+        display: none;
+    }
+
+    #partner .content-cont {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #partner {
+        padding-bottom: 0;
+    }
+}

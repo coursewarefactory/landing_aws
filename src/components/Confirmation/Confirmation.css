@@ -1,0 +1,66 @@
+
+.hero-conf {
+    position: relative;
+    background: url(assets/hero-conf.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+#conf .hero-content p {
+    margin-bottom: 40px;
+}
+
+#conf h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-top: 10%;
+}
+
+#conf p {
+    font-size: 18px;
+
+}
+
+#conf .hero-container {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+
+}
+#conf .hero-logo{
+    padding: 30px 50px 0 110px;
+    width: 100%;
+}
+#conf .hero-logo img{
+    margin-bottom: 0;
+}
+#conf .hero-content{
+    width: 100%;
+    padding:  10% 90px;
+    opacity: 100%;
+    max-width: unset;
+}
+.conf-logo {
+    max-width: 234px;
+}
+
+.conf-content {
+    padding: 50px 0 50px 60px;
+    border-left: 8px solid #222328;
+}
+
+@media only screen and (max-width:992px) {
+    .conf-content {
+        padding: 32px 24px;
+        border-left: 0;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    #conf h1 {
+        font-size: 36px;
+    }
+}

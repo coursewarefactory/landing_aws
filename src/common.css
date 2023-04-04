@@ -1,0 +1,134 @@
+body {
+    font-family: "neue-haas-grotesk-text", serif, sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    color: #ffffff;
+}
+
+html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+h5,
+.h5 {
+    font-weight: 500;
+}
+
+p {
+    color: #232F3E;
+}
+
+h1,
+.h1 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    color: #000;
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.stroke {
+    color: #FFF;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+h2,
+.h2 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+h3,
+.h3 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: italic;
+    color: #000000;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h4,
+.h4 {
+
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+h5,
+.h5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #FF1414;
+    margin: 0 0 2em 0;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.orange {
+    color: #FF9900;
+}
+
+.midnight {
+    color: #232F3E;
+}
+
+.black {
+    color: #000000;
+}
+@media screen and (max-width:992px) {
+
+    .small-text-center {
+        text-align: center;
+    }
+
+    .small-center {
+        margin: 0 auto;
+    }
+
+    h3,
+    .h3 {
+        font-size: 28px;
+    }
+}
+.hr {
+    border-top: 8px solid #EFEFEF;
+    width: 100%;
+    margin: 0 auto;
+}
+

@@ -1,27 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./common.css";
+import reportWebVitals from "./reportWebVitals";
 import {
-    createBrowserRouter,
-    RouterProvider,
-    createRoutesFromElements,
-    Route
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
 } from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Conf from "./pages/Conf/Conf";
+import { Footer } from "./layout/Footer/Footer";
 
-const router = createBrowserRouter(createRoutesFromElements(
+const router = createBrowserRouter(
+  createRoutesFromElements(
     <>
-        <Route path="*" element={<Main />}/>
-        <Route path="/" element={<Main />}/>
-        <Route path="/conf" element={<Conf />} />
+      <Route path="*" element={<Main />} />
+      <Route path="/" element={<Main />} />
+      <Route path="/conf" element={<Conf />} />
     </>
-))
-const root = ReactDOM.createRoot(document.getElementById('root'));
+  )
+);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
 
