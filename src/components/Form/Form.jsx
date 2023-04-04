@@ -26,7 +26,6 @@ export const Form = () => {
       console.error(e);
     }
   };
-  console.log(formState);
   return (
     <div className="header-form-wrapper" id="partner_with_us">
       <div className="h2 orange">Partner With Us</div>
