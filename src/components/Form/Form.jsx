@@ -1,10 +1,17 @@
 import "./Form.css";
 import { FormInput } from "./FormInput/FormInput";
-import { useState } from "react";
+import { createRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FormSelect } from "./FormSelect/FormSelect";
+import emailJs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
+const serviceID = process.env.REACT_APP_EMAIL_SERVICE_ID;
+const templateID = process.env.REACT_APP_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY;
 export const Form = () => {
   const navigate = useNavigate();
+  const recaptchaRef = createRef();
+  const [errorValidationMessage, setValidationErrorMessage] = useState("");
   const [formState, setFormState] = useState({
     firstName: "",
     lastName: "",
@@ -19,12 +26,28 @@ export const Form = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      // await sendFormData(formState)
-      setTimeout(() => navigate("/conf"), 2000);
-    } catch (e) {
-      console.error(e);
+    recaptchaRef.current.getValue();
+    for (const value of Object.values(formState)) {
+      if (value.trim().length === 0)
+        return setValidationErrorMessage("Fields must be filled");
     }
+    setValidationErrorMessage("");
+    if (recaptchaRef.current.getValue()) {
+      try {
+        const response = await emailJs.send(
+          serviceID,
+          templateID,
+          formState,
+          publicKey
+        );
+        if (response.status === 200) {
+          navigate("/conf");
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    setValidationErrorMessage("Captcha must be solved");
   };
   return (
     <div className="header-form-wrapper" id="partner_with_us">
@@ -485,8 +508,13 @@ export const Form = () => {
               />
             </div>
           </div>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          />
         </form>
       </div>
+      <p style={{ color: "red" }}>{errorValidationMessage}</p>
     </div>
   );
 };
