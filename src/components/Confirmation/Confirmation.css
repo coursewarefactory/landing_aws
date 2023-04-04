@@ -50,7 +50,19 @@
     padding: 50px 0 50px 60px;
     border-left: 8px solid #222328;
 }
+@media (max-width: 1024px) {
 
+    #conf .hero-logo{
+        padding: 24px;
+    }
+    #conf .hero-logo img{
+        margin-bottom: 20px;
+
+    }
+    #conf .hero-content{
+        padding: 24px;
+    }
+}
 @media only screen and (max-width:992px) {
     .conf-content {
         padding: 32px 24px;
@@ -62,5 +74,11 @@
 @media only screen and (max-width:767px) {
     #conf h1 {
         font-size: 36px;
+    }
+}
+@media (max-width: 425px){
+
+    #conf .hero-logo{
+        margin: 0;
     }
 }
