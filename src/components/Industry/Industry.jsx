@@ -132,9 +132,9 @@ export const Industry = () => {
                   Non-Profit
                   <br />
                   <span>
-                    [AWS PARTNER] and AWS are ready to help nonprofits of all
-                    sizes overcome barriers to technology adoption, while
-                    enhancing their scale, performance, and capabilities.
+                    Evgsoft and AWS are ready to help nonprofits of all sizes
+                    overcome barriers to technology adoption, while enhancing
+                    their scale, performance, and capabilities.
                   </span>
                 </h4>
               </div>
@@ -143,7 +143,7 @@ export const Industry = () => {
         </div>
         <div className="row">
           <div className="col text-center">
-            <a href="#placeholder" className="button">
+            <a href="#partner_with_us" className="button">
               Find out more
             </a>
           </div>

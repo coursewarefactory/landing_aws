@@ -8,7 +8,7 @@ export const Confirmation = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="hero-logo">
-              <img src={logoPartner} alt="[AWS PARTNER]" />
+              <img src={logoPartner} alt="Evgsoft" />
             </div>
             <div className="hero-content row">
               <div className="col">
@@ -18,12 +18,12 @@ export const Confirmation = () => {
                   FOR PARTNERING WITH US
                 </h1>
                 <p className="midnight">
-                  Thank you for your interest in becoming an [AWS PARTNER]
-                  partner! We are eager to learn more about your business, your
-                  aspirations, and how we can help you take your cloud business
-                  to the next level. A member of our team will reach out to you
-                  as soon as possible. In the meantime, if you have any
-                  questions, don't hesitate to email ____@____.___.{" "}
+                  Thank you for your interest in becoming an Evgsoft partner! We
+                  are eager to learn more about your business, your aspirations,
+                  and how we can help you take your cloud business to the next
+                  level. A member of our team will reach out to you as soon as
+                  possible. In the meantime, if you have any questions, don't
+                  hesitate to email ____@____.___.{" "}
                 </p>
                 <p>
                   <a href="#placeholder" className="button">

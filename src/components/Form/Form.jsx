@@ -461,42 +461,6 @@ export const Form = () => {
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </FormSelect>
-          <div className="form-element-layout row">
-            <div className="col-12">
-              <div className="single-checkbox-row row">
-                <input
-                  className="checkbox form-check-input"
-                  type="checkbox"
-                  name="optCheckbox1"
-                  id="opt_checkbox_1"
-                />
-                <label
-                  className="checkbox-aligned form-item-label"
-                  htmlFor="opt_checkbox_1"
-                >
-                  Optional Checkbox
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="form-element-layout row">
-            <div className="col-12">
-              <div className="single-checkbox-row row">
-                <input
-                  className="checkbox form-check-input"
-                  type="checkbox"
-                  name="optCheckbox2"
-                  id="opt_checkbox_1"
-                />
-                <label
-                  className="checkbox-aligned form-item-label"
-                  htmlFor="opt_checkbox_1"
-                >
-                  Optional Checkbox
-                </label>
-              </div>
-            </div>
-          </div>
 
           <div id="" className="form-element-layout row">
             <div className="col-12">
@@ -508,10 +472,12 @@ export const Form = () => {
               />
             </div>
           </div>
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          />
+          <div class="captcha">
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            />
+          </div>
         </form>
       </div>
       <p style={{ color: "red" }}>{errorValidationMessage}</p>

@@ -9,18 +9,23 @@ export const Hero = () => {
         <div className="row">
           <div className="col-lg-7">
             <div className="hero-logo">
-              <img src={logoPartner} alt="[AWS PARTNER]" />
+              <span className="orange">
+                {" "}
+                <h1>
+                  Evg<span className="orange">Soft</span>
+                </h1>
+              </span>
             </div>
             <div className="hero-content">
               <h1>
                 <span className="orange">MIGRATE TO AWS WITH</span>
                 <br />
-                [AWS PARTNER]
+                Evg<span className="orange"> Soft</span>
               </h1>
               <p className="midnight">
                 Migrate to the cloud, modernize your IT infrastructure, and
-                drive more innovation in less time with [AWS PARTNER] and Amazon
-                Web Services (AWS). With our support, you can move to the cloud
+                drive more innovation in less time with EvgSoft and Amazon Web
+                Services (AWS). With our support, you can move to the cloud
                 quickly, lower migration costs, and jumpstart digital
                 transformation.
               </p>

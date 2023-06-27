@@ -14,13 +14,13 @@ export const WhatAndWhy = () => {
                 Accelerate Migration, Accelerate Your Business
               </h3>
               <p>
-                [AWS PARTNER] is here to help you make responsible, data-driven
+                EvgSoft is here to help you make responsible, data-driven
                 migration decisions. We will help you replace guesswork with
                 analysis by providing a data-backed blueprint to build,
                 validate, and execute your AWS migration.{" "}
               </p>
               <p>
-                <a href="#placeholder" className="button primary">
+                <a href="#partner_with_us" className="button primary">
                   See how it works
                 </a>
               </p>

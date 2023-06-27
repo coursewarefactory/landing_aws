@@ -11,7 +11,7 @@ export const Partnership = () => {
               <h3>
                 <span className="orange">Why Migrate to AWS with</span>
                 <br />
-                [AWS PARTNER]
+                Evgsoft
               </h3>
               <p>
                 AWS has helped thousands of organizations, including global
@@ -19,9 +19,9 @@ export const Partnership = () => {
                 companies have benefited from substantial IT savings, as well as
                 improvements in productivity, business agility, and operational
                 resilience. Combining the experience and expertise of AWS, along
-                with [AWS PARTNER SOLUTION], AWS and [AWS PARTNER] provide a
-                complete and proven approach for migrating to the cloud so that
-                you can achieve cloud benefits faster.
+                with [AWS PARTNER SOLUTION], AWS and Evgsoft provide a complete
+                and proven approach for migrating to the cloud so that you can
+                achieve cloud benefits faster.
               </p>
               <a href="#partner_with_us" className="button">
                 Get Started

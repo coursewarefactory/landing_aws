@@ -10,9 +10,15 @@ export const Footer = () => {
         <div className="row align-items-center">
           <div className="col-lg-10">
             <p style={{ marginTop: 0, lineHeight: "24px" }}>
-              [AWS PARTNER] Business Address
+              <span className="orange">
+                {" "}
+                <h1>
+                  <span className="white">Evg</span>
+                  <span className="orange">Soft</span>
+                </h1>
+              </span>
               <br />
-              Business Address
+              Chicago, IL
             </p>
           </div>
           <div className="col-lg-2">
@@ -38,7 +44,8 @@ export const Footer = () => {
         <div className="row align-items-center">
           <div className="col-lg-10">
             <p style={{ margin: 0, lineHeight: "24px" }}>
-              Copyright © 2022 [AWS PARTNER] All rights reserved.
+              <div>Copyright © 2014-{new Date().getFullYear()}</div> EvgSoft,
+              All rights reserved.
               <br />
               <a href="#placeholder" target="_blank">
                 Privacy
