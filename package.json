@@ -1,7 +1,7 @@
 {
   "name": "imcawsus",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://coursewarefactory.github.io/landing/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
