@@ -8,7 +8,10 @@ export const Confirmation = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="hero-logo">
-              <img src={logoPartner} alt="Evgsoft" />
+              <h1>
+                <span className="white">Evg</span>
+                <span className="orange">Soft</span>
+              </h1>
             </div>
             <div className="hero-content row">
               <div className="col">
@@ -23,7 +26,7 @@ export const Confirmation = () => {
                   and how we can help you take your cloud business to the next
                   level. A member of our team will reach out to you as soon as
                   possible. In the meantime, if you have any questions, don't
-                  hesitate to email ____@____.___.{" "}
+                  hesitate to email info@evg-soft.com.{"EvgSoft "}
                 </p>
                 <p>
                   <a href="#placeholder" className="button">

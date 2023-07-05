@@ -8,6 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const serviceID = process.env.REACT_APP_EMAIL_SERVICE_ID;
 const templateID = process.env.REACT_APP_TEMPLATE_ID;
 const publicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY;
+const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 export const Form = () => {
   const navigate = useNavigate();
   const recaptchaRef = createRef();
@@ -473,10 +474,7 @@ export const Form = () => {
             </div>
           </div>
           <div class="captcha">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-            />
+            <ReCAPTCHA ref={recaptchaRef} sitekey={siteKey} />
           </div>
         </form>
       </div>
