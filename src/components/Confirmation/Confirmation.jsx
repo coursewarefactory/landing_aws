@@ -1,5 +1,5 @@
 import "./Confirmation.css";
-import logoPartner from "assets/logo-partner.png";
+// import logoPartner from "assets/logo-partner.png";
 import heroConfMobile from "assets/hero-conf-mobile.png";
 export const Confirmation = () => {
   return (
