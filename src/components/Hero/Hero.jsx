@@ -1,5 +1,5 @@
 import "./Hero.css";
-import logoPartner from "assets/logo-partner.png";
+// import logoPartner from "assets/logo-partner.png";
 import heroMan from "assets/hero-man.png";
 import { Form } from "components/Form/Form";
 export const Hero = () => {
